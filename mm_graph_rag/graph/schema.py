@@ -1,4 +1,3 @@
-# src/mm_graph_rag/graph/schema.py
 from pydantic import BaseModel, Field
 
 

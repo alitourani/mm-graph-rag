@@ -1,2 +1,5 @@
 setuptools>=84.0.0
-pydantic==2.13.5
+pydantic>=2.13.5
+pillow>=13.0.0
+openai-whisper>=20250625
+litellm==1.105.1
