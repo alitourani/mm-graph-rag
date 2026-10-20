@@ -1,11 +1,10 @@
 import whisper
-from mm_graph_rag.processors.base_processor import BaseProcessor
 
 
-class AudioProcessor(BaseProcessor):
-    def __init__(self, model_name: str = "base"):
-        self.model = whisper.load_model(model_name)
+class AudioProcessor:
+    def __init__(self, model_size: str = "tiny"):
+        self.model = whisper.load_model(model_size)
 
-    def process(self, raw_payload: dict) -> str:
-        result = self.model.transcribe(raw_payload["audio_path"])
+    def process_audio(self, audio_path: str) -> str:
+        result = self.model.transcribe(audio_path)
         return result.get("text", "")

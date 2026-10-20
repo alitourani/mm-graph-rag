@@ -1,8 +1,8 @@
+import os
 from pydantic import BaseModel
 
 
 class Config(BaseModel):
-    model_name: str = "gpt-4o-mini" # "gpt-4o-mini"
-    device: str = "cpu"             # "cuda" or "cpu"
-    whisper_model: str = "base"     # "base", "small", "medium", "large"
-    graph_depth: int = 2
+    llm_model: str = "gemini/gemini-3.8-flash"
+    api_key: str = os.getenv("GEMINI_API_KEY", "")
+    whisper_model: str = "tiny"  # tiny, base, small, medium, large

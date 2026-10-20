@@ -1,5 +1,11 @@
-setuptools>=84.0.0
+pyvis==0.3.2
+networkx>=3.7
+pillow==12.3.0
 pydantic>=2.13.5
-pillow>=13.0.0
+litellm>=1.105.1
+streamlit>=1.66.0
+setuptools>=84.0.0
 openai-whisper>=20250625
-litellm==1.105.1
+llama-index-core>=0.14.25
+llama-index-llms-litellm>=0.8.0
+llama-index-embeddings-gemini==0.4.2
